@@ -535,25 +535,201 @@ answer1 + "<br>" + answer2 + "<br>" + answer3;
 ## JS String Methods
 Basic String Methods
 Javascript strings are primitive and immutable: All string methods produce a new string without altering the original string.
-
-String length
-String charAt()
-String charCodeAt()
-String at()
-String [ ]
-String slice()
-String substring()
-String substr()
+<ul>
+<li>String length</li>
+<li>String charAt()</li>
+<li>String charCodeAt()</li>
+<li>String at()</li>
+<li>String []</li>
+<li>String slice()</li>
+<li>String substring()</li>
+<li>String substr()</li>
+</ul>
 See Also:
-String Search Methods
-String Templates
+<ul>
+<li>String Search Methods</li>
+<li>String Templates</li>
+<li>String toUpperCase()</li>
+<li>String toLowerCase()</li>
+<li>String concat()</li>
+<li>String trim()</li>
+<li>String trimStart()</li>
+<li>String trimEnd()</li>
+<li>String padStart()</li>
+<li>String padEnd()</li>
+<li>String repeat()</li>
+<li>String replace()</li>
+<li>String replaceAll()</li>
+<li>String split()</li>
+</ul>
 
-## JS String Methods
+<html>
+<body>
+
+<h1>JavaScript String</h1>
+<h2>The charAt() Method</h2>
+
+<p>The charAt() method returns the character at a given position in a string:</p>
+
+<p id="demo"></p>
+
+<script>
+var text = "HELLO WORLD";
+document.getElementById("demo").innerHTML = text.charAt(0);
+</script>
+
+</body>
+</html>
+
 ## JS String Search
+String Search Methods :
+<ul>
+<li>String indexOf()</li>
+<li>String lastIndexOf()</li>
+<li>String search()</li>
+</ul>
+See Also:
+<ul>
+<li>Basic String Methods</li>
+<li>String Templates</li>
+<li>String match()</li>
+<li>String matchAll()</li>
+<li>String includes()</li>
+<li>String startsWith()</li>
+<li>String endsWith()</li>
+</ul>
+
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The lastIndexOf() Method</h2>
+
+<p>The position of the last occurrence of "locate" is:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Please locate where 'locate' occurs!";
+let index = text.lastIndexOf("locate");
+document.getElementById("demo").innerHTML = index;
+</script>
+
+</body>
+</html>
+
 ## JS String Templates
+<html>
+<body>
+<h1>JavaScript Template Strings</h1>
+<p>Templates allow multiline strings:</p>
+
+<p id="demo"></p>
+
+<p>Templates are not supported in Internet Explorer.</p>
+
+<script>
+let text =
+
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
 ## JS Numbers
+let x = 100;         // x is a number
+
+let y = "100";       // y is a string
+
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>JavaScript will try to convert strings to numbers when dividing:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = "100";
+let y = "10";
+let z = x / y;   
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+</html>
+
 ## JS Biglnt
+With BigInt the total number of supported data types in JavaScript is 8:
+<ul>
+<li>1. String</li>
+<li>2. Number</li>
+<li>3. Bigint</li>
+<li>4. Boolean</li>
+<li>5. Undefined</li>
+<li>6. Null</li>
+<li>7. Symbol</li>
+<li>8. Object</li>
+</ul>
+
+ecause of this, JavaScript can only safely represent integers:
+Up to 9007199254740991 +(253-1)
+and
+Down to -9007199254740991 -(253-1).
+Integer values outside this range lose precision.
+
+<html>
+<body>
+
+<h1>JavaScript Numbers</h1>
+<h2>Create a BigInt</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = 123456789012345678901234567890n;
+let y = BigInt("123456789012345678901234567890");
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+</script>
+
+</body>
+</html>
+
 ## JS Number Methods
+Method	Description
+toString()	Returns a number as a string
+toExponential()	Returns a number written in exponential notation
+toFixed()	Returns a number written with a number of decimals
+toPrecision()	Returns a number written with a specified length
+valueOf()	Returns a number as a number
+
+<html>
+<body>
+
+<h2>JavaScript Number Methods</h2>
+
+<p>The toString() method converts a number to a string.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 123;
+document.getElementById("demo").innerHTML =
+  x.toString() + "<br>" +
+   (123).toString() + "<br>" +
+   (100 + 23).toString();
+</script>
+
+</body>
+</html>
+
 ## JS Number Properties
 ## JS Arrays
 ## JS Array Methods
