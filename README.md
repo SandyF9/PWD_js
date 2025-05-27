@@ -730,10 +730,124 @@ document.getElementById("demo").innerHTML =
 </body>
 </html>
 
-## JS Number Properties
+## JS Number Properties  
+Property	Description
+EPSILON	The difference between 1 and the smallest number > 1.
+MAX_VALUE	The largest number possible in JavaScript
+MIN_VALUE	The smallest number possible in JavaScript
+MAX_SAFE_INTEGER	The maximum safe integer (253 - 1)
+MIN_SAFE_INTEGER	The minimum safe integer -(253 - 1)
+POSITIVE_INFINITY	Infinity (returned on overflow)
+NEGATIVE_INFINITY	Negative infinity (returned on overflow)
+
+<html>
+<body>
+
+<h1>JavaScript Number Properties</h1>
+
+<p>Using a Number property on a variable, or value, will return undefined:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 6;
+document.getElementById("demo").innerHTML = x.MAX_VALUE;
+</script>
+
+</body>
+</html>
+
 ## JS Arrays
+let car1 = "Saab";
+let car2 = "Volvo";
+let car3 = "BMW";
+
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+
+<p id="demo"></p>
+
+<script>
+const cars = [];
+cars[0]= "Saab";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+</body>
+</html>
+
 ## JS Array Methods
+Array length	Returns the length (size) of an array
+Array toString()	Converts an array to a comma separated string of values
+Array at()	Returns an indexed element from an array
+Array join()	Joins all array elements into a string
+Array pop()	Removes the last element from an array
+Array push()	Adds a new element to an array
+Array shift()	Removes the first array element
+Array unshift()	Adds a new element at the beginning of an array
+Array delete()	Creates undefined holes in the array
+Array concat()	Creates a new array by merging existing arrays
+Array copyWithin()	Copies array elements to another position in the array
+Array flat()	Creates a new array from sub-array elements
+Array slice()	Slices out a part of an array
+Array splice()	Adds new items to an array
+Array toSpliced()	Adds new items to an array in a new array
+See Also:
+Search Methods	  Different array index or find methods
+Sort Methods	    Different array sort methods
+Iteration Methods	Different array ineration methods
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The at() Method</h2>
+
+<p>The at() method returns an indexed element from an array:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits.at(2);
+
+document.getElementById("demo").innerHTML = fruit;
+</script>
+
+</body>
+</html>
+
 ## JS Array Search
+Array indexOf()	Returns the first position of an element value
+Array lastIndexOf()	Returns the last position of an element value
+Array includes()	Returns true if an element value is present in an array
+Array find()	Returns the value of the first element that passes a test
+Array findIndex()	Returns the index of the first element that passes a test
+Array findLast()	Returns the value of the last element that passes a test
+Array findLastIndex()	Returns the index of the last element that passes a test
+
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The lastIndexOf() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits.lastIndexOf("Apple") + 1;
+
+document.getElementById("demo").innerHTML = "Apple is found in position " + position;
+</script>
+
+</body>
+</html>
+
 ## JS Array Sort
 ## iS Array Iteration
 ## JS Array Const
